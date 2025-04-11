@@ -16,11 +16,11 @@ const Card = ({ data }) => {
                 alt={animal.name}
               />
             </div>
-            <div>
+            <div className="p-4 grid grid-cols-2">
               <h2>{animal.name}</h2>
-              <span>{animal.age}</span>
+              <span className="place-self-end ">{animal.age}</span>
+              <p className="col-span-2">{animal.breeds?.primary}</p>
             </div>
-            <p>{animal.breeds?.primary}</p>
           </div>
         </li>
       ))}
